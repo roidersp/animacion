@@ -32,7 +32,7 @@ $(document).on("touchstart click", ".indepth_share_logos_item" ,function(){
 	
 	
 	$(document).on("click", "#indepth_share_twiiter", function(){
-		var text = encodeURIComponent(frases[share]+" ¡Yo le voy a "+nombres[share]+" FC! Conoce todas las escuadras de la Animated Football League");
+		var text = encodeURIComponent(frases[share]+" ¡Yo le voy a "+nombres[share]+" FC! Conoce las escuadras de la Animated Football League");
 		var url = encodeURIComponent("http://juanfutbol.com/indepth/animated-football-league");
 		window.open("https://twitter.com/share?text="+text+"&url="+url,"","width=500, height=300");
 		}
