@@ -11,15 +11,12 @@ var numeroImages2=8;
 var posicion_slider2=0;
 var share;
 
-
 $(document).on("click", ".indepth_share_logos_item" ,function(){
 	var team=$(this).attr("red");
 	share=team;
 	var text='¡Yo le voy '+team+' FC! ¿Y tú a quién escoges? Conoce a todos los equipos de la Social Network Football League';
-	var url='http://juanfutbol.com/indepth/social-network-football-league?playeras_redes='+team+'&image=http://s3.amazonaws.com/stadium-azteca.underdog.gs/page/d568d534-3e2e-42cc-a5de-d108f8b4fc02/final/images/NFL_'+team+'PLAYERA1.jpg';
-	console.log(url);
-	console.log(encodeURIComponent(url));
-	var img='<img src="http://s3.amazonaws.com/stadium-azteca.underdog.gs/page/d568d534-3e2e-42cc-a5de-d108f8b4fc02/final/images/NFL_'+team+'PLAYERA1.jpg">';
+	var url='http://juanfutbol.com/indepth/social-network-football-league?playeras_redes='+team+'&image='+urlIndepth+'images/'+team+'-Descarga.jpg';
+	var img='<img src="'+urlIndepth+'images/'+team+'-Descarga.png">';
 	var title='Yo soy '+team+'  FC';
 		$("#indepth_share_card #indepth_share_image").html(img);
 		$("#indepth_share_card #indepth_share_title").html(title);
@@ -37,18 +34,16 @@ $(document).on("click", ".indepth_share_logos_item" ,function(){
 	);
 	
 	$(document).on("click", "#indepth_share_fb", function(){
-		var url = encodeURIComponent("http://juanfutbol.com/indepth/social-network-football-league?playeras_redes="+share+"&image=http://s3.amazonaws.com/stadium-azteca.underdog.gs/page/d568d534-3e2e-42cc-a5de-d108f8b4fc02/final/images/NFL_"+share+"PLAYERA1.jpg");
+		var url = encodeURIComponent("http://juanfutbol.com/indepth/social-network-football-league?playeras_redes="+share+"&image="+urlIndepth+"images/NFL_"+share+"PLAYERA1.jpg");
 		window.open("https://www.facebook.com/sharer/sharer.php?u="+url,"","width=500, height=300");
 
 	});
 	
-	$(document).on("click",".indepth_share_big_content",function(){
-		$(this).hide();
+	$(document).on("click","#indepth_card_close",function(){
+		$(".indepth_share_big_content").hide();
 	});
 	
-	$(document).on("click",".indepth_share_card_cont",function(){
-		$(".indepth_share_big_content").show();
-	});
+
 	
 
 
@@ -231,11 +226,6 @@ if (window.DISQUS) {
    jQuery('head').append(dsq);
 }
 };
-
-
-
-
-
 
 
 $(document).ready(function(){

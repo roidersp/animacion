@@ -144,34 +144,6 @@
 	}
 
 
-.indepth_quote_container{
-	width: 700px;
-	margin: auto;
-	color: #878787;
-	margin: 50px auto;
-}
-
-.indepth_quote_container hr{
-	width: 50px;
-	margin: center;
-}
- .indepth_quote{
-	font-family: 'Roboto';
-	font-size: 20px;
-	/*border-bottom: 2px solid #000;
-	border-top: 2px solid #000;*/
-	text-transform: uppercase;
-	font-weight: 300;
-	text-align: center;
-	letter-spacing: 0.05em;	
-}
-
-.indepth_quote_autor{
-	text-align: center;
-	font-family: 'Roboto';
-	font-size: 16px;
-	margin-top: 5px;
-}
 
 
 #indepth_button_ver{
@@ -240,32 +212,11 @@
 }
 
 
-
-
-#indepth_intro .indepth_text{
-	font-weight: 400;
-	font-size: 20px;
-}
-
-
-.indepth_break_image{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	width: 100%;
-	max-width: 810px;
-	margin: auto;
-}
-
-.indepth_break_image img{
-	width: 90%;
-	max-width: 810px;
-}
  
 #indepth_cover .indepth_parallax_back{
 	background-image: url(../images/PORTADA_Fondo.png);
-	background-size: 1920px auto;
-	background-position: center top;
+	background-size: cover;
+	background-position: center -100px;
 	text-align: center;
 }
 
@@ -306,13 +257,15 @@
 	font-weight: 400;
 	margin-bottom: 20px;
 	text-transform: uppercase;
-	font-family: 'Roboto';
 	text-align: center;
+	color: #4eb1f9;
+	font-family: 'Roboto Condensed';
 }
 
 .indepth_img_playeras{
 	display: table;
 	margin: auto;
+	text-align: center;
 }
 
 .indepth_playera {
@@ -388,7 +341,7 @@
 
 #indepth_footer .indepth_text{
 	font-size:17px;
-	color: #8A8A8A;
+	color: #313232;
 	text-align:center;
 }
 
@@ -467,9 +420,8 @@
 }
 
 .indepth_text.cual{
-	color: black;
-	font-size: 20px;
-	font-family: 'Roboto Condensed';
+	color: #313232;
+	font-size: 25px;
 	max-width: 420px;
 	text-align: center;
 	font-weight: 300;
@@ -478,6 +430,7 @@
 
 .indepth_logo_img_cover{
 	margin-top: 15px;
+	padding-bottom: 50px;
 }
 
 .indepth_logo_cover{
@@ -498,27 +451,31 @@
 }
 
 #indepth_page4 {
-	background-image: url(../images/NFL_SnapchatFONDO.jpg);
+	background-image: url(../images/DRAGON_Fondo.png);
 }
 
 #indepth_page5 {
-	background-image: url(../images/NFL_TwitterFONDO.jpg);
+	background-image: url(../images/MONSTER_Fondo.png);
 }
 
 #indepth_page6 {
-	background-image: url(../images/NFL_InstagramFONDO.jpg);
+	background-image: url(../images/SHREK_Fondo.png);
 }
 
 #indepth_page7 {
-	background-image: url(../images/NFL_WhatsAppFONDO.jpg);
+	background-image: url(../images/JACK_Fondo.png);
 }
 
 #indepth_page8 {
-	background-image: url(../images/NFL_PinterestFONDO.jpg);
+	background-image: url(../images/INTENSA_Fondo.png);
 }
 
 #indepth_page9 {
-	background-image: url(../images/NFL_PortadaFONDO.jpg);
+	background-image: url(../images/HUEVOS_Fondo.png);
+}
+#indepth_page10{
+	padding-bottom: 120px;
+	padding-top: 80px;
 }
 
 .indepth_container_cover{
@@ -561,6 +518,22 @@
 	width: 320px;
 	margin: auto;
 	display: table;
+	position: relative;
+}
+
+#indepth_card_close{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: black;
+	transform: translate(50%,-50%);
+	border-radius: 50%;
+	background-image: url("../images/equis.png");
+	background-size: 50% auto;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 #indepth_share_image{
@@ -617,62 +590,235 @@
 	
 }
 
+
+@media screen and (max-height: 890px) {
+	.indepth_logo_img_cover{
+		width: 700px;
+		margin: auto;
+		margin-top: 20px;
+		
+	}
+	
+	.indepth_logo_img_cover img{
+		width: 100%;
+	}
+	
+	#indepth_cover .indepth_parallax_back {
+	    background-position: center -100px;
+	}
+	
+	.indepth_logo_cover{
+		width: 250px;
+		margin: auto;
+		display: table;
+		    margin-bottom: 25px;
+	}
+	
+	.indepth_logo_cover img{
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-height: 810px) {
+	.indepth_logo_img_cover{
+		width: 650px;
+		margin: auto;
+		margin-top: 15px;
+	}
+	
+	.indepth_logo_img_cover img{
+		width: 100%;
+	}
+	
+	#indepth_cover .indepth_parallax_back {
+	    background-position: center -100px;
+	}
+	
+	.indepth_logo_cover{
+		width: 230px;
+		margin: auto;
+		display: table;
+		    margin-bottom: 20px;
+	}
+	
+	.indepth_logo_cover img{
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-height: 750px) {
+	.indepth_logo_img_cover{
+		width: 600px;
+	}
+	
+		
+}
+
+@media screen and (max-height: 720px) {
+	.indepth_logo_img_cover{
+		width: 550px;
+	}
+	
+	.indepth_logo_cover{
+		width: 200px;
+	}
+	
+		
+}
+
+@media screen and (max-height: 720px) {
+	.indepth_logo_img_cover{
+		width: 500px;
+	}
+	
+	.indepth_logo_cover{
+		width: 200px;
+	}
+	
+		
+}
+
+@media screen and (max-height: 640px) {
+	.indepth_logo_img_cover{
+		width: 350px;
+	}
+	
+	.indepth_logo_cover{
+		width: 150px;
+	}
+	
+	
+	
+		
+}
+
+@media screen and (max-height: 580px) {
+	.indepth_logo_img_cover{
+		width: 350px;
+	}
+	
+	.indepth_logo_cover{
+		width: 130px;
+	}
+	
+	.indepth_logojuan{
+		width: 120px;
+	}
+	
+		
+}
+
+@media screen and (max-height: 480px) {
+	.indepth_logo_img_cover{
+		width: 300px;
+	}
+	
+	.indepth_logo_cover{
+		width: 100px;
+	}
+	
+	.indepth_logojuan{
+		width: 80px;
+	}
+	
+		
+}
+
+@media screen and (max-height: 420px) {
+	.indepth_logo_img_cover{
+		width: 250px;
+	}
+	
+	.indepth_logo_cover{
+		width: 80px;
+	}
+	
+	.indepth_logojuan{
+		width: 60px;
+	}
+	
+		
+}
+
+@media screen and (max-height: 350px) {
+	.indepth_logo_img_cover{
+		width: 220px;
+	}
+	
+	.indepth_logo_cover{
+		width: 70px;
+	}
+	
+	.indepth_logojuan{
+		width: 50px;
+	}
+	
+		
+}
+
 /*** Movil ****/
-@media screen and (max-width:1109px) {
-	.indepth_mapa_left{
-		max-width: 680px;
+@media screen and (max-width:1100px) {
+	.indepth_page_content .indepth_page_body{
+		max-width: 800px;
+	}
+	
+	.indepth_playera{
+		width: 350px;
+	}
+	
+	.indepth_playera_costado{
+		width: 320px;
+	}
+	
+	.indepth_playera_costado img{
+		width: 100%;
+	}
+	
+	.indepth_playera_side_item{
+		width: 260px;
+	}
+	
+	.indepth_playera_side_item img{
+		width: 100%;
+	}
+	
+	.indepth_playera_side_item.izq{
+		left: 6%;
+	}
+	
+	.indepth_playera_side_item.der{
+		right: 6%;
+	}
+	
+	.indepth_share_logos{
+		max-width: 700px;
+	}
+	
+	.indepth_page_image{
+		height: 1380px;
+		background-size: auto 1120px;
 	}
 }
 
 @media screen and (max-height: 730px) {
-	.indepth_logo_cover img, .indepth_logo_img_cover img{
-		height: 100%;
-		width: auto;
-	}
-	
-	.indepth_container_cover{
-		height: 100%;
-		margin-top: 5%;
-	}
-	
-	.indepth_logo_cover{
-		height: 25%;
-		display: table;
-		margin: auto;
-		
-		
-	}
-	
-	.indepth_logo_img_cover{
-		height: 65%;
-		display: table;
-		margin: auto;
-	}
-	
-	.indepth_container_cover{
-		display: inline-block;
-		width: 100%;
-	}
-	
+
+
 	
 	
 }
 
-@media screen and (max-width:679px) {
-	.indepth_mapa_left{
-		max-width: 320px;
-		margin: 0px auto;
-		margin-bottom: 10px;
-	}
-	.indepth_box{
-		margin:  10px 0;
-	}
-}
 
-@media screen and (max-width:1023px) {
+
+@media screen and (max-width: 960px) {
 	body{
 		width: 100%;
 		min-width: 0px;
+	}
+	
+	.indepth_pages, .indepth_page{
+		min-width: 0;
 	}
 
 
@@ -705,335 +851,150 @@
 
 @media screen and (max-width: 800px) {
 
-	.indepth_logo_cover img, .indepth_logo_img_cover img{
-		height: auto;
-		width: 100%;
-	}
-	
-	.indepth_container_cover{
-		width:100%;
-	}
-	
-	.indepth_logo_cover{
-		height: auto;
-		width: 80%;
-		display: table;
-		margin: auto;
-		
-		
-	}
-	
-	.indepth_logo_img_cover{
-		height: auto;
-		display: table;
-		margin: auto;
-	}
-	
-	.indepth_container_cover{
-		display: table-cell;
-	}
-	
-	#indepth_cover .indepth_parallax_back{
-		display: table;
-	}
-
-	
-	.indepth_pages{
-		width: 100%;
-		max-width: 800px;	
-		min-width: 0px;
-	}
-
-	.indepth_page{
-		width: 100%;
-		min-width: 0px;
-		position: relative;
-		overflow: hidden;
-	}
-	
-	.indepth_page_body{
-		width:95%;
-		margin: 0 auto;
-	}
-	
-	#indepth_cover .indepth_titlle_container {
-		width: 100%;
-	}
-	
-	#indepth_cover .indepth_parallax_back{
-		background-size: auto 800px;
-		background-position: 50% 0;
-	}
-	
-	.indepth_page_infografia .indepth_page_body{
-		width: 100%;
-	}
-	
-	.indepth_break .indepth_page_body{
-		width: 100%;
-	}
-	#partidos{
-		width: 100%;
-	}
-	
-	.indepth_menu_item{
-		float: left;
-		width: 40px;
-		margin-right: 5px;
-		
-	}
-		
-	.indepth_menu_cont{
-		width: auto;
-		
-	}
-	
-	#indepth_menu{
-		width: 100%;
-		margin-left: 0px;
-		background: black;
-		padding: 5px 0;
-	}
-	
-
-
-	
-	#indepth_cover .indepth_parallax_back{
-		background-size: cover;
-		background-attachment: scroll;
-		background-repeat: no-repeat;
-	}
-	
-
-	
-	.indepth_break .indepth_parallax_back .indepth_text_container{
-		padding: 0 10px;
-	}
-	
-	.indepth_infografia_container img{
-		width: 100%;
-	
-	}
-	
-
-
-
-
-}
-
-@media screen and (max-width: 750px) {
-	
-		.indepth_break{
-			display: none;
-		}
-		
-		.indepth_page_image{
-			background-repeat: no-repeat;
-		}
-		
-		
-		
-		
-		
-		
-
-	
-}
-
-
-@media screen and (max-width: 605px) {
-	
-	.indepth_player_sep{
-		width: 320px;
-		height: 30px;
-		float: none;		
-	}
-	
 	.indepth_playera{
-		float: none;
+		width: 300px;
 	}
 	
-	#com{
-		width: 98%;
+	.indepth_playera_side{
+		width: 680px;
 		margin: auto;
-	}
-	
-	.indepth_docs_container{
-		width: 320px;
-		height: auto;
-		margin: auto;
-	}
-
-	.indepth_docs, .indepth_docs_container{
-		height: auto;
-	}
-
-	.indepth_docs_small{
-		position: relative;
-	}
-
-	.indepth_docs{
-		width: 320px;
-	}
-
-	.indepth_docs_left,.indepth_docs_r{
-		float: none;
-		width: 100%;
-	}
-
-	.indepth_docs_description{
-		position: relative;
-		margin-bottom: 5px;
-	}
-	.indepth_quote_container{
-		width: 90%;
-	}
-	
-	.indepth_text_image{
-	width: 90%;
-	float: none;
-	margin: auto 10px;
-	
-	overflow: hidden;
-}
-
-
-
-
-	
-	.indepth_break {
-		max-height: 500px;
-	}
-
-
-
-	
-	#indepth_cover{
-		height: 650px;
-	}
-
-	
-	
-	
-	.indepth_parallax_back{
-		background-attachment: initial;
-	}
-	
-	.indepth_break .indepth_title{
-		font-size:46px;
-		text-transform: uppercase;
-		font-weight: 700;
-	}
-	
-	.indepth_page_content{
-		background-attachment: scroll;
-	}
-	
-	
-
-}
-
-@media screen and (max-width: 550px) {
-	.indepth_share_logos{
-		width: auto;
-		height: auto;
-		max-width: 300px;
-		margin: auto;
-		display: table;
 		margin-top: 30px;
 	}
 	
-	.indepth_share_logos_item{
-		position: static;
-		width: 140px;
-		float: left;
-		margin: 5px;
-		
+	.indepth_playera_side_item{
+		width: 240px;
+		top: 20px;
 	}
 	
-	.indepth_share_logos_item:hover{
-		width: 140px;
-		transform: translate(0px, 0px);
+	.indepth_playera_side_item.izq{
+		left: 0%;
+	}
+	
+	.indepth_playera_side_item.der{
+		right: 0%;
+	}
+	
+	.indepth_page_image {
+	    height: 1300px;
+	    background-size: auto 1060px;
 	}
 
 }
 
+@media screen and (max-width: 700px) {
+
+	.indepth_playera{
+		width: 250px;
+	}
+	
+	.indepth_playera_side{
+		width: 580px;
+		margin: auto;
+		margin-top: 30px;
+	}
+	
+	.indepth_playera_side_item{
+		width: 200px;
+		top: 35px;
+	}
+	
+	.indepth_playera_side_item.izq{
+		left: 0%;
+	}
+	
+	.indepth_playera_side_item.der{
+		right: 0%;
+	}
+	
+	.indepth_page_image {
+	    height: 1200px;
+	    background-size: auto 970px;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.indepth_playera{
+		max-width: 450px;
+		width: 95%;
+		margin: auto;
+	}
+	
+	.indepth_playera_costado{
+		width: 95%;
+		max-width: 400px;
+	}
+	
+	.indepth_playera_side_item{
+		display: none;
+	}
+	
+	
+	.indepth_page_image {
+	    height: 2250px;
+	    background-size: auto 2000px;
+	}
+	
+	.indepth_logo_img_cover{
+		width: 95%;
+	}
+
+
+	.indepth_playera_side{
+		width: 100%;
+	}
+}
+
+
+
+
 @media screen and (max-width: 414px) {
+	.indepth_logo_team{
+		margin-bottom: 50px;
+	}
 	
+	.indepth_page_image {
+	    height: 2150px;
+	    background-size: auto 1900px;
+	}
 	
+	.indepth_share_logos_item{
+		height: 90px;
+	}
 	
-	
-	#indepth_image1{
-		margin:  15px auto;
+	.indepth_share_logos_item img{
+		height: 100%;
 	}
 	
 	
-	.indepth_page_content .indepth_title{
-		font-size: 30px;
-	}
-	
-	
-	.indepth_share_item.whatsapp{
-		display: table;
-	}
-	
-	#indepth_cover{
-		height: 540px;	
-	}
-	
-	.indepth_menu_item{
-		float: left;
-		width: 30px;
-		height: 30px;
-		margin-right: 5px;
-		
-	}
-	
-	#indepth_cover .indepth_parallax_back{
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-attachment: inherit;	
-	}
+
 
 }
 	
 @media screen and (max-width: 375px) {
 	
-	.indepth_menu_item{
-		float: left;
-		width: 25px;
-		height: 25px;
-		margin-right: 7px;
-		
-	}
-	
-	.indepth_share_card_cont{
-		background: white;
-		width: 290px;
-		margin: auto;
-		display: table;
+	.indepth_page_image {
+	    height: 2000px;
+	    background-size: auto 1750px;
 	}
 	
 }
 	
-	@media screen and (max-width: 320px) {
-.indepth_menu_item{
-		width: 22px;
-		height: 22px;
-		
+@media screen and (max-width: 360px) {
+	.indepth_page_image {
+	    height: 1920px;
+	    background-size: auto 1650px;
 	}
 	
-	.indepth_img_playeras{
-		display: block;
-		width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+	.indepth_page_image {
+	    height: 1770px;
+	    background-size: auto 1480px;
 	}
 	
-	.indepth_playera{
-		width: 100%;
-	}
-	
-	}
+}
 
 
 
