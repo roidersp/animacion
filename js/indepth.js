@@ -39,7 +39,7 @@ $(document).on("click", ".indepth_share_logos_item" ,function(){
 
 	});
 	
-	$(document).on("click","#indepth_card_close",function(){
+	$(document).on("touchstart click","#indepth_card_close",function(){
 		console.log("test");
 		$(".indepth_share_big_content").hide();
 	});
