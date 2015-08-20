@@ -23,6 +23,7 @@ $(document).on("click", ".indepth_share_logos_item" ,function(){
 		$("#indepth_share_card .indepth_share_text").html('¿Y tú a quién escoges? Conoce a todos los equipos de la Social Network Football League en juanfutbol');
 		$(".indepth_share_big_content").css("display","table");
 		$("html,body").css("overflow","hidden");
+		$("html,body").css("position","relative");
 		
 	});
 	
