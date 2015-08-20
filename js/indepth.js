@@ -1,6 +1,6 @@
 var disqus_shortname = 'juanfutbol';
 var disqus_identifier;
-var disqus_url="social-network-football-league";
+var disqus_url="animated-football-league";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
@@ -10,17 +10,20 @@ var numeroImages2=8;
  var intervalID2;
 var posicion_slider2=0;
 var share;
+var nombres={"BUZZ":"Comando Estelar", "MINION":"Minions", "JACK":"Nightmare","DRAGON": "Dragón", "INTENSA":"Intensamente", "NORMAN":"Paranorman", "MONSTER":"Monsters","HUEVOS":"Huevocartoon","SHREK":"Shrek"};
+var frases={"BUZZ":"Al infinito y más allá.", "MINION":"Yepi.", "JACK":"Nadie dudará que tienes un gusto incomparable sin igual.","DRAGON": "Valiente elección.", "INTENSA":"Emocionante elección.", "NORMAN":"Alucinas pepinillos y futbol.", "MONSTER":"Wazowski está feliz con tu incorporación.","HUEVOS":"¡Que el colesterol nos acompañe!","SHREK":"Más vale afuera que adentro."};
 
 $(document).on("touchstart click", ".indepth_share_logos_item" ,function(){
+	
 	var team=$(this).attr("red");
 	share=team;
 	var text='¡Yo le voy '+team+' FC! ¿Y tú a quién escoges? Conoce a todos los equipos de la Social Network Football League';
-	var url='http://juanfutbol.com/indepth/social-network-football-league?playeras_redes='+team+'&image='+urlIndepth+'images/'+team+'-Descarga.jpg';
+	var url='http://juanfutbol.com/indepth/animated-football-league?playeras_redes='+team+'&image='+urlIndepth+'images/'+team+'-Descarga.png';
 	var img='<img src="'+urlIndepth+'images/'+team+'-Descarga.png">';
-	var title='Yo soy '+team+'  FC';
+	var title='¡Yo le voy a '+nombres[team]+'  FC!';
 		$("#indepth_share_card #indepth_share_image").html(img);
 		$("#indepth_share_card #indepth_share_title").html(title);
-		$("#indepth_share_card .indepth_share_text").html('¿Y tú a quién escoges? Conoce a todos los equipos de la Social Network Football League en juanfutbol');
+		$("#indepth_share_card .indepth_share_text").html(frases[team]+'No dejes de compartir tu elección de la Animated Football League.');
 		$(".indepth_share_big_content").css("display","table");
 		$("html,body").css("overflow","hidden");
 		$("html,body").css("position","relative");
@@ -29,14 +32,15 @@ $(document).on("touchstart click", ".indepth_share_logos_item" ,function(){
 	
 	
 	$(document).on("click", "#indepth_share_twiiter", function(){
-		var text = encodeURIComponent("¡Yo le voy "+share+" FC! ¿Y tú a quién escoges? Conoce a todos los equipos de la Social Network Football League");
-		var url = encodeURIComponent("http://juanfutbol.com/indepth/social-network-football-league");
+		var text = encodeURIComponent(frases[share]+" ¡Yo le voy a "+nombres[share]+" FC! Conoce todas las escuadras de la Animated Football League");
+		var url = encodeURIComponent("http://juanfutbol.com/indepth/animated-football-league");
 		window.open("https://twitter.com/share?text="+text+"&url="+url,"","width=500, height=300");
 		}
 	);
 	
 	$(document).on("click", "#indepth_share_fb", function(){
-		var url = encodeURIComponent("http://juanfutbol.com/indepth/social-network-football-league?playeras_redes="+share+"&image="+urlIndepth+"images/NFL_"+share+"PLAYERA1.jpg");
+		var text=frases[share]+" ¡Yo le voy a "+nombres[share]+" FC! ¿Quieres ser parte del equipo? Conoce todas las escuadras de la Animated Football League";
+		var url = encodeURIComponent("http://juanfutbol.com/indepth/animated-football-league?text="+text+"&image="+urlIndepth+"images/"+share+"-Descarga.png");
 		window.open("https://www.facebook.com/sharer/sharer.php?u="+url,"","width=500, height=300");
 
 	});

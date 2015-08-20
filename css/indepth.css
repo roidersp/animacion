@@ -1,3 +1,7 @@
+#recommended-wrapper{
+	display: none;
+}
+
 .indepth_share{
 		display: none;
 		position: fixed;
@@ -473,7 +477,7 @@
 }
 
 #indepth_share_title{
-	font-size: 20px;
+	font-size: 18px;
 	margin-bottom: 8px;
 	font-weight: 600;
 }
