@@ -536,6 +536,7 @@
 	background-size: 50% auto;
 	background-position: center center;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 #indepth_share_image{
