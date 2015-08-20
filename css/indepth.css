@@ -512,6 +512,10 @@
 	display: table;
 	z-index: 200;
 	display: none;
+	-webkit-transform:translateZ(1px);
+      -moz-transform:translateZ(1px);
+      -o-transform:translateZ(1px);
+      transform:translateZ(1px);
 	
 }
 
@@ -531,6 +535,10 @@
 	right: 0;
 	background-color: black;
 	transform: translate(50%,-50%);
+	-webkit-transform: translate(50%,-50%);
+	-moz-transform: translate(50%,-50%);
+	-ms-transform: translate(50%,-50%);
+	-o-transform: translate(50%,-50%);
 	border-radius: 50%;
 	background-image: url("../images/equis.png");
 	background-size: 50% auto;
