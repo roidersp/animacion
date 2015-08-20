@@ -42,10 +42,19 @@ $(document).on("click", ".indepth_share_logos_item" ,function(){
 	});
 	
 	$(document).on("click","#indepth_card_close",function(){
-		console.log("test");
 		$("html,body").css("overflow","auto");
 		$(".indepth_share_big_content").hide();
 	});
+	
+	$(document).on("click",".indepth_share_big_content",function(e){
+		console.log(e.target.id);
+		 if (e.target.id != '#test' && !$('#test').find(e.target).length) {
+	        $(".indepth_share_big_content").hide();
+	    }
+	})
+
+		
+	
 	
 
 	
