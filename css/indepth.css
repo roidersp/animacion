@@ -506,6 +506,8 @@
 	height: 100%;
 	top:0px;
 	left: 0px;
+	bottom: 0px;
+	right: 0px;
 	background: rgba(0, 0, 0, 0.62);
 	display: table;
 	z-index: 200;
