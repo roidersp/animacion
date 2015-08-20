@@ -946,6 +946,11 @@
 	.indepth_playera_side{
 		width: 100%;
 	}
+	
+	body{
+		webkit-overflow-scrolling: touch;
+	}
+	
 }
 
 
@@ -1002,85 +1007,7 @@
 
 
 @media screen and (max-height: 414px) {
-	#indepth_libros_container{
-		height: 320px;
-	}
 	
-
-	
-	.indepth_infografia_container{
-		width: 500px;
-	}
-	
-	#indepth_break_1{
-		height: 400px;
-	}
-	
-	.indepth_page_infografia img{
-		width: 500px;
-	}
-	
-	.indepth_break{
-		height: 600px;
-	}
-	
-	#indepth_break_5{
-		height: 300px;
-	}
-	
-	#indepth_cover {
-height: 362px;
-}
-#indepth_cover .indepth_cover_back_body {
-top: 160px;
 }
 
-#indepth_cover .indepth_title {
-font-size: 25px;
-}
-
-	
-	.simione {
-		margin: -40px -50px -20px 10px;
-		float: right;
-	}
-}
-
-@media screen and (max-width: 736px) and (max-height: 414px){
-	#indepth_cover .indepth_parallax_back{
-		background-size: auto 400px;
-	}
-}
-
-@media screen and (max-width: 1024px) and (max-height: 768px){
-	.indepth_parallax_back{
-		background-attachment: initial;
-	}
-}
-
-@media screen and (max-height: 1024px) and (max-width: 768px){
-	.indepth_parallax_back{
-		background-attachment: initial;
-	}
-}
-
-@keyframes changewidth {
-  from {
-    background: red;
-  }
-
-  to {
-    background-size: yellow;
-  }
-}
-
-@-webkit-keyframes changewidth {
-  from {
-    background-size: auto 100%, auto auto;
-  }
-
-  to {
-    background-size: auto 150%, auto auto;
-  }
-}
 
