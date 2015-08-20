@@ -50,6 +50,7 @@ $(document).on("click", ".indepth_share_logos_item" ,function(){
 		console.log(e.target.id);
 		 if (e.target.id != '#test' && !$('#test').find(e.target).length) {
 	        $(".indepth_share_big_content").hide();
+	        $("html,body").css("overflow","auto");
 	    }
 	})
 

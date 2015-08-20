@@ -303,13 +303,17 @@
 
 .indepth_share_logos_item{
 	height: 135px;
-	opacity: .7;
 	cursor: pointer;
 	display: inline-block;
 	margin: 10px 10px;
 }
 
-.indepth_share_logos_item:hover{
+.indepth_share_logos_item img{
+	opacity: .7;
+	cursor: pointer;
+}
+
+.indepth_share_logos_item img:hover{
 	opacity: 1;
 	transform: scale(.9);
 }
@@ -431,8 +435,8 @@
 }
 
 #indepth_card_close{
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 	position: absolute;
 	top: 0;
 	right: 0;
