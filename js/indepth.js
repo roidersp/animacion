@@ -11,7 +11,7 @@ var numeroImages2=8;
 var posicion_slider2=0;
 var share;
 
-$(document).on("touchstart click", ".indepth_share_logos_item," ,function(){
+$(document).on("touchstart click", ".indepth_share_logos_item" ,function(){
 	var team=$(this).attr("red");
 	share=team;
 	var text='¡Yo le voy '+team+' FC! ¿Y tú a quién escoges? Conoce a todos los equipos de la Social Network Football League';
