@@ -33,7 +33,7 @@ $(document).on("touchstart click", ".indepth_share_logos_item" ,function(){
 	
 	$(document).on("click", "#indepth_share_twiiter", function(){
 		var text = encodeURIComponent(frases[share]+" ¡Yo le voy a "+nombres[share]+" FC! Conoce las escuadras de la Animated Football League");
-		if(share=="NORMAN"){
+		if(share=="JACK"){
 			var text = encodeURIComponent("¡Yo le voy a "+nombres[share]+" FC! Conoce las escuadras de la Animated Football League");
 			
 		}
